@@ -8,7 +8,7 @@ module weight_array_wrapper(
 	output [31:0] DO
 );
 
-	tag_array i_tag_array(
+	weight_array i_weight_array(
 		.A0   (A[0]  ),
 		.A1   (A[1]  ),
 		.A2   (A[2]  ),
@@ -81,10 +81,13 @@ module weight_array_wrapper(
 		.DI29 (DI[29]),
 		.DI30 (DI[30]),
 		.DI31 (DI[31]),
-		.CK   (CK    ),
-		.WEB  (WEB   ),
-		.OE   (OE    ),
-		.CS   (CS    )
+		.CK   (CK),
+		.WEB0 (WEB),
+		.WEB1 (WEB),
+		.WEB2 (WEB),
+		.WEB3 (WEB),
+		.OE   (OE),
+		.CS   (CS)
 	);
 	
 endmodule
