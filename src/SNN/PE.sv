@@ -1,4 +1,4 @@
-`threshold	0.1
+`threshold	0.5
 
 module PE(
 	input clk,
